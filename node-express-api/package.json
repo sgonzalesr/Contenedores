@@ -1,0 +1,13 @@
+{
+  "name": "node-express-api",
+  "version": "1.0.0",
+  "description": "API mínima en Express con endpoints / y /health",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
