@@ -14,9 +14,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl \
 RUN useradd -ms /bin/bash appuser
 USER appuser
 
-# Copia el JAR ejecutable (NO el -original)
+# Copia el JAR ejecutable 
 COPY --from=build /src/target/java-spring-api-1.0.0.jar /app/app.jar
-#             👆👆👆 apúntalo al nombre exacto de tu artifact/version
+#apúntalo al nombre exacto de artifact/version
 
 ENV SERVER_PORT=8081 APP_MESSAGE="Hello from Java Spring!" JAVA_OPTS=""
 EXPOSE 8081

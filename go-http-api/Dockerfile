@@ -2,7 +2,7 @@
 FROM golang:1.22-alpine AS build
 WORKDIR /src
 
-# Habilitar módulos y bajar dependencias (aunque no tengamos externas)
+# Habilitar módulos y bajar dependencias
 COPY go.mod .
 RUN go mod download
 
